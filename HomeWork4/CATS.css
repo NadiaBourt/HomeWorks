@@ -3,27 +3,36 @@
 }
 .main-Class
 {
-
+display: block;
 }
 .details-container{
+    width: 1250px;
+    height: 400px;
+    border: 1px solid #0a0202;
+    text-align: center;
 
 }
 .details-image{
-
+    width: 600px; height: 400px;
 }
 .details-title{
     display: block;
+    align-items: center;
 }
 .thumbnails-list{
     list-style: none;
 }
 .thumbnails-item{
-
+    width: 1250px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid #17137c;
+;
 }
 .thumbnails-image{
     width: 150px;
     height: 150px;
-
+    left: 50%;
 }
 .thumbnails-title{
     display: block;
