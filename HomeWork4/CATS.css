@@ -1,0 +1,33 @@
+.logo{
+    font-size: 3em;
+}
+.main-Class
+{
+
+}
+.details-container{
+
+}
+.details-image{
+
+}
+.details-title{
+    display: block;
+}
+.thumbnails-list{
+    list-style: none;
+}
+.thumbnails-item{
+
+}
+.thumbnails-image{
+    width: 150px;
+    height: 150px;
+
+}
+.thumbnails-title{
+    display: block;
+}
+.thumbnails-anchor{
+
+}
