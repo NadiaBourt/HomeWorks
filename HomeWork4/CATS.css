@@ -1,8 +1,12 @@
 body{
     display: flex;
-    flex-direction: column}
+    flex-direction: column;
+    background-color: antiquewhite;
+}
 .logo{
     font-size: 3em;
+    background-color: aqua;
+    text-align: center;
 }
 .main-Class
 {
@@ -38,7 +42,7 @@ display: block;
     left: 50%;
 }
 .thumbnails-title{
-    display: block;
+    display: block; text-align: center;
 }
 .thumbnails-anchor{
 
