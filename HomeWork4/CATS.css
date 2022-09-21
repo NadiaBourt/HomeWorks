@@ -2,20 +2,26 @@ body{
     display: flex;
     flex-direction: column;
     background-color: bisque;
+    margin: 0;
+    width: 1250px;
+
 }
 .logo{
     display: block;
-    width: 1252px;
+    width: 1250px;
     height: 50px;
     font-size:2.5em;
     background-color: chartreuse;
     text-align: center;
     color: crimson;
+    font-family: "Calibri Light";
+    text-transform: capitalize;
 }
 .main-Class
 {
     display: block;
     text-align: center;
+    justify-content: center;
 
 }
 .details-container{
@@ -62,6 +68,7 @@ body{
 .thumbnails-image{
     width: 20vw;
     height: 15vw;
+    display: block;
 }
 .thumbnails-title{
     display: block;
