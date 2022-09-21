@@ -1,9 +1,10 @@
 body{
-    display: block;
+    display: flex;
     flex-direction: column;
     background-color: bisque;
 }
 .logo{
+    display: block;
     width: 1252px;
     height: 50px;
     font-size:2.5em;
@@ -18,38 +19,47 @@ body{
 
 }
 .details-container{
+    display: flex;
+    flex-direction: column;
     width: 1250px;
-    height: 400px;
+    height: 350px;
     border: 1px solid;
     color: fuchsia;
     text-align: center;
-
+    margin-top: 3vh;
+    align-items: center;
 }
 .details-image{
-    width: 600px; height: 400px;
+    width: 20vw;
+    height: 15vw;
+
 }
 .details-title{
     display: block;
-}
+    }
 .thumbnails-list{
+    display: flex;
     list-style: none;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    overflow: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 3vh;
-
+    max-height: 35vh;
+    max-width: max-content;
+    overflow: auto;
+    justify-content: space-around;
+    padding-left: 0;
+    padding-right: 0;
 }
 .thumbnails-item{
-    display: block;
     width: 20vw;
     height: 20vw;
-    margin-top: 2.5vh;
+    margin-top: 3vh;
+    margin-bottom: 2.5vh;
     border: solid 2px #17137c;
     border-radius: 25%;
     overflow: auto;
 }
 .thumbnails-image{
-    display: block;
     width: 20vw;
     height: 15vw;
 }
@@ -58,7 +68,8 @@ body{
     text-align: center;
     front-size: 99%;
     background-color: chartreuse;
+    height: 5vw;
 }
 .thumbnails-anchor{
-
+text-decoration: none;
 }
