@@ -1,21 +1,27 @@
 body{
-    display: flex;
+    display: block;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: bisque;
 }
 .logo{
-    font-size: 3em;
-    background-color: aqua;
+    width: 1252px;
+    height: 50px;
+    font-size:2.5em;
+    background-color: chartreuse;
     text-align: center;
+    color: crimson;
 }
 .main-Class
 {
-display: block;
+    display: block;
+    text-align: center;
+
 }
 .details-container{
     width: 1250px;
     height: 400px;
-    border: 1px solid #0a0202;
+    border: 1px solid;
+    color: fuchsia;
     text-align: center;
 
 }
@@ -24,25 +30,34 @@ display: block;
 }
 .details-title{
     display: block;
-    align-items: center;
 }
 .thumbnails-list{
     list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    overflow: auto;
+    margin-top: 3vh;
+
 }
 .thumbnails-item{
-    width: 1250px;
-    height: 150px;
-    text-align: center;
-    border: 1px solid #17137c;
-;
+    display: block;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 2.5vh;
+    border: solid 2px #17137c;
+    border-radius: 25%;
+    overflow: auto;
 }
 .thumbnails-image{
-    width: 150px;
-    height: 150px;
-    left: 50%;
+    display: block;
+    width: 20vw;
+    height: 15vw;
 }
 .thumbnails-title{
-    display: block; text-align: center;
+    display: block;
+    text-align: center;
+    front-size: 99%;
+    background-color: chartreuse;
 }
 .thumbnails-anchor{
 
