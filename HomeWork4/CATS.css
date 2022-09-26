@@ -1,10 +1,27 @@
+@font-face {
+    font-family: "Bauhaus 93";
+    /*src: url("");*/
+}
+    :root
+    {
+
+        --thumbnails-image-width: 20vw;
+        --thumbnails-image-height: 15vw;
+        --thumbnails-title-height: calc(var(--thumbnails-image-height)*0.33);
+
+    }
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     display: flex;
     flex-direction: column;
     background-color: bisque;
     margin: 0;
-    width: 1250px;
-
+    width: 1260px;
 }
 .logo{
     display: block;
@@ -14,34 +31,41 @@ body{
     background-color: chartreuse;
     text-align: center;
     color: crimson;
-    font-family: "Calibri Light";
-    text-transform: capitalize;
+    font-family: "Bauhaus 93";
+    text-transform: uppercase;
 }
 .main-Class
 {
-    display: block;
-    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+   /* text-align: center;*/
     justify-content: center;
-
+    flex-grow: revert;
+    width: 1260px;
 }
 .details-container{
     display: flex;
     flex-direction: column;
-    width: 1250px;
+    width: 1160px;
     height: 500px;
-    border: 1px solid;
     color: fuchsia;
     text-align: center;
-    margin-top: 2vh;
+    text-transform: capitalize;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
     align-items: center;
+    justify-content: center;
 }
 .details-image{
-    width: 800px;
+    width: 860px;
     height: 500px;
-
+    border-radius: 25%;
 }
 .details-title{
     display: block;
+    font-family: Dubai;
+    text-transform: uppercase;
     }
 .thumbnails-list{
     display: flex;
@@ -49,16 +73,17 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3vh;
-    max-height: 35vh;
-    max-width: max-content;
+    max-height: max-content;
+    width: 1250px;
     overflow: auto;
     justify-content: space-around;
     padding-left: 0;
     padding-right: 0;
+   /* flex-grow: 1; - don't work'*/
 }
 .thumbnails-item{
-    width: 20vw;
-    height: 20vw;
+    width: var(--thumbnails-image-width);
+    height: calc(var(--thumbnails-image-height)+var(--thumbnails-title-height));
     margin-top: 3vh;
     margin-left: 3vh;
     margin-right: 3vh;
@@ -69,8 +94,8 @@ body{
     display: flex;
 }
 .thumbnails-image{
-    width: 20vw;
-    height: 15vw;
+    width: var(--thumbnails-image-width);
+    height: var(--thumbnails-image-height);
     display: block;
     margin-outside:2vh;
 }
@@ -79,16 +104,15 @@ body{
     text-align: center;
     front-size: 99%;
     background-color: chartreuse;
-    height: 5vw;
+    height: var(--thumbnails-title-height);
 }
 .thumbnails-anchor{
 text-decoration: none;
 }
-@media screen(900px)
-{
+@media (min-width: ) {
 
 }
-
+@media screen(900px)
 {
 
 }
