@@ -33,6 +33,7 @@ body{
     color: fuchsia;
     text-align: center;
     margin-top: 2vh;
+    align-items: center;
 }
 .details-image{
     width: 800px;
@@ -83,7 +84,11 @@ body{
 .thumbnails-anchor{
 text-decoration: none;
 }
-@media screen(min-width: 900px)
+@media screen(900px)
+{
+
+}
+
 {
 
 }
