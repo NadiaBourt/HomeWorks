@@ -33,7 +33,6 @@ body{
     color: fuchsia;
     text-align: center;
     margin-top: 2vh;
-    align-items: center;
 }
 .details-image{
     width: 800px;
@@ -65,13 +64,14 @@ body{
     margin-bottom: 2.5vh;
     border: solid 2px #17137c;
     border-radius: 25%;
-    overflow: auto;
+    overflow: hidden;
     display: flex;
 }
 .thumbnails-image{
     width: 20vw;
     height: 15vw;
     display: block;
+    margin-outside:2vh;
 }
 .thumbnails-title{
     display: block;
