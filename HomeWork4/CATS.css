@@ -83,7 +83,7 @@ body{
 }
 .thumbnails-item{
     width: var(--thumbnails-image-width);
-    height: calc(var(--thumbnails-image-height)+var(--thumbnails-title-height));
+    height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
     margin-top: 3vh;
     margin-left: 3vh;
     margin-right: 3vh;
@@ -109,10 +109,11 @@ body{
 .thumbnails-anchor{
 text-decoration: none;
 }
-@media (min-width: ) {
+@media (min-width: 560px)
+{
 
 }
-@media screen(900px)
+@media (min-width: 900px)
 {
 
 }
