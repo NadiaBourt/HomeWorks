@@ -1,52 +1,55 @@
 @font-face {
     font-family: "Bauhaus 93";
 }
-    :root
+@font-face {
+    font-family: "Hadassah Friedlaender"
+}
+:root
     {
         --thumbnails-image-width: 20vw;
         --thumbnails-image-height: 15vw;
-        --thumbnails-title-height: calc(var(--thumbnails-image-height)*0.33);
+        --thumbnails-title-height: calc(var(--thumbnails-image-height) * 0.25);
     }
 
 body, html{
     height: 100%;
     /*width: 100%;*/
 }
-
 body{
     display: flex;
     flex-direction: column;
     background-color: bisque;
     margin: 0;
-    width: 1260px;
-    height: 760px;
+    /*width: 1260px;*/
+    /*height: 760px;*/
 }
 .logo{
     display: block;
-    width: 1260px;
-    height: 60px;
+    /*width: 1260px;*/
+    /*height: 60px;*/
     font-size:3em;
     background-color: chartreuse;
     text-align: center;
     color: crimson;
     font-family: "Bauhaus 93";
     text-transform: uppercase;
+    /*flex-grow: 2;*/
 }
 .main-Class
 {
-    margin: auto;
     display: flex;
+    margin: auto;
     flex-direction: column;
-    text-align: center;
+    /*text-align: center;*/
     justify-content: center;
-    flex-grow: revert;
-    width: 960px;
+    flex-grow: 1;
+    /*width: 960px;*/
 }
 .details-container{
     display: flex;
     flex-direction: column;
-    width: 1160px;
-    height: 500px;
+    /*width: 1160px;*/
+    /*height: 500px;*/
     color: fuchsia;
     text-align: center;
     text-transform: capitalize;
@@ -54,6 +57,7 @@ body{
     margin-top: 10vh;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 }
 .details-image{
     width: 800px;
@@ -63,8 +67,9 @@ body{
 }
 .details-title{
     display: block;
-    font-family: Dubai;
+    font-family: "Hadassah Friedlaender";
     text-transform: uppercase;
+    font-size: 20px;
     }
 .thumbnails-list{
     display: flex;
@@ -78,7 +83,7 @@ body{
     justify-content: space-around;
     padding-left: 0;
     padding-right: 0;
-    /*flex-grow: 1; /*- don't work'*/
+    flex-grow: 1; /*- don't work'*/
 }
 .thumbnails-item{
     max-width: var(--thumbnails-image-width);
@@ -113,10 +118,9 @@ text-decoration: none;
         flex-direction: column;
         flex-wrap: nowrap;
         max-height: 960px;
-        max-width: 300px;
         order: -1;
-        align-items: inherit;
-        margin-top: auto;
+        /*align-items: inherit;*/
+        /*margin-top: auto;*/
         justify-content: flex-start;
     }
 
