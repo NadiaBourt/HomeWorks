@@ -10,7 +10,7 @@
 
 body, html{
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 body{
@@ -19,6 +19,7 @@ body{
     background-color: bisque;
     margin: 0;
     width: 1260px;
+    height: 760px;
 }
 .logo{
     display: block;
@@ -36,10 +37,10 @@ body{
     margin: auto;
     display: flex;
     flex-direction: column;
-   /* text-align: center;*/
+    text-align: center;
     justify-content: center;
     flex-grow: revert;
-    width: 1260px;
+    width: 960px;
 }
 .details-container{
     display: flex;
@@ -71,21 +72,21 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 3vh;
-    max-height: max-content;
-    width: 1250px;
-    overflow: auto;
+    /*max-height: 20vh;*/
+    width: 900px;
+    overflow-y: auto;
     justify-content: space-around;
     padding-left: 0;
     padding-right: 0;
-    flex-grow: 1; /*- don't work'*/
+    /*flex-grow: 1; /*- don't work'*/
 }
 .thumbnails-item{
     max-width: var(--thumbnails-image-width);
     min-height: calc(var(--thumbnails-image-height) + var(--thumbnails-title-height));
     margin-top: 3vh;
-    margin-left: 3vh;
-    margin-right: 3vh;
-    margin-bottom: 2.5vh;
+    /*margin-left: 3vh;*/
+    /*margin-right: 3vh;*/
+    /*margin-bottom: 2.5vh;*/
     border: solid 2px #17137c;
     border-radius: 25%;
     overflow: hidden;
@@ -107,24 +108,46 @@ body{
 .thumbnails-anchor{
 text-decoration: none;
 }
-@media (min-width: 560px)
-{
-    .thumbnails-list{
-    flex-direction: column;
-    flex-wrap: nowrap;
-    max-height: 960px;
+@media (min-width: 560px) {
+    .thumbnails-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-height: 960px;
         max-width: 300px;
-    order: -1;
-    align-items: inherit;
+        order: -1;
+        align-items: inherit;
         margin-top: auto;
         justify-content: flex-start;
-}
-    .main-Class
-    {
+    }
+
+    .main-Class {
         flex-direction: row;
         justify-content: space-around;
     }
-@media (min-width: 900px)
-{
-
+.details-image{
+    width: 600px;
+    height: 400px;
+}
+    @media (min-width: 900px) {
+        html{
+            height: 600px;
+            width: 960px;
+        }
+        body {
+            width: 1260px;
+            height: 680px;
+        }
+        .main-Class{
+            height: 600px;
+            width: 960px;
+        }
+        .details-container
+        {
+            height: 450px;
+            margin-top: 20px;
+        }
+        .details-image{
+            justify-content: space-around;
+        }
+    }
 }
