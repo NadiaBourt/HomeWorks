@@ -15,7 +15,24 @@ h1 {
 h2 {
   font-size:           130%;
 }
-
+h3 {
+  color: darkgreen;
+}
+  #elixirs{
+    font-family: "Times New Roman";
+    text-align: center;
+    color: #d12c47;
+    border-color: #d12c47;
+    border-width: 2px;
+    border-style: solid;
+    padding: 30px;
+    width: 180px;
+    background-image: url(images/cocktail.gif);
+    background-position: top;
+    background-repeat: repeat-x;
+    line-height: 1.5em;
+    float: right;
+    }
 #guarantee {
   line-height:         1.9em;
   font-style:          italic;
@@ -32,4 +49,43 @@ h2 {
   background-image:    url(images/background.gif);
   background-repeat:   no-repeat;
   background-position: top left;
+}
+#elixirs h2
+{
+  color: blueviolet;
+}
+#elixirs h3 {
+  color: purple;
+}
+#elixirs title{
+  color: #0d5353;
+}
+.cd{
+  color: #cc6600;
+  font-family: Georgia;
+}
+.artist{
+ color: darkblue;
+  font-family: sans-serif ;
+  font-weight: bold;
+}
+#elixirs a:link {
+  color: #333333;
+}
+#elixirs a:visited {
+  color: yellow;
+}
+#elixirs a:hover {
+background: black;
+  color: cornflowerblue;
+}
+#drinks a:hover {
+  background: #cc6600;
+  color: chartreuse;
+}
+#footer {
+  font-size: 50%;
+  text-align: center;
+  line-height: normal;
+  margin-top: 30px;
 }
