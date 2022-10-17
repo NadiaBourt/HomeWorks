@@ -7,31 +7,31 @@ body {
 
 #header {
   background-color: #675c47;
-  margin:           10px;
-  height:           108px;
+  margin: 10px 10px 0px 10px;
+  height: 108px;
 }
-
 #main {
-  background:       #efe5d0 url(images/background.gif) top left;
-  font-size:        105%;
-  padding:          15px;
-  margin:           0px 10px 10px 10px;
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) top left;
+  font-size: 105%;
+  padding: 15px;
+  vertical-align: top;
 }
-
 #sidebar {
-  background:       #efe5d0 url(images/background.gif) bottom right;
-  font-size:        105%;
-  padding:          15px;
-  margin:           0px 10px 10px 10px;
+  display: table-cell;
+  background: #efe5d0 url(images/background.gif) bottom right;
+  font-size: 105%;
+  padding: 15px;
+  vertical-align: top;
 }
 
 #footer {
   background-color: #675c47;
-  color:            #efe5d0;
-  text-align:       center;
-  padding:          15px;
-  margin:           10px;
-  font-size:        90%;
+  color: #efe5d0;
+  text-align: center;
+  padding: 15px;
+  margin: 0px 10px 10px 10px;
+  font-size: 90%;
 }
 
 h1 {
@@ -55,4 +55,32 @@ a:visited {
   color:            #675c47;
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
+}
+div#drinks{
+  display: table;
+}
+div#tableContainer{
+  display: table;
+}
+
+div#tableRow{
+  display: table-row;
+}
+#tableContainer {
+  display: table;
+  border-spacing: 10px;
+}
+#tableRow {
+  display: table-row;
+}
+#drinks {
+  background-color: #efe5d0;
+  width: 230px;
+  border-spacing: 10px;
+  padding: 10px;
+  font-size: 105%;
+  vertical-align: top;
+  display: table-cell;
+  padding: 15px;
+
 }
