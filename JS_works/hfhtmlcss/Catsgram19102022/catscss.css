@@ -20,7 +20,7 @@ body{
     background-color: gold;
     display: block;
     text-align: center;
-    font-family: "Bauhaus 93";
+    font-family: sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
     }
@@ -35,7 +35,7 @@ body{
    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .details-image{
     width: 90vw;
@@ -52,10 +52,10 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 45vh;
+    max-height: 25vh;
     overflow-y: auto;
     justify-content: space-around;
-    /*padding-left: 1px;*/
+    padding-left: 1px;
 }
 .thumbnails-item{
     max-width: var(--thumbnails-image-width);
@@ -78,10 +78,6 @@ body{
 }
 .thumbnails-anchor{
 text-decoration: none;
-}
-.thumbnails-item:hover{
-    transform: scale(1.5);
-    margin-left: 1vw;
 }
 @media (min-width: 560px) {
     :root{
@@ -113,7 +109,6 @@ text-decoration: none;
     align-items: center;
     margin-bottom: 1px;
     }
-.
 @media(min-width: 900px) {
     .thumbnails-list{
         padding-right: 2vw;
