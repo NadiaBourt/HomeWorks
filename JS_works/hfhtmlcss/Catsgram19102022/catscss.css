@@ -31,13 +31,20 @@ body{
     justify-content: center;
     flex-grow: 2;
 }
+.hidden.main-class
+{
+
+}
 .details-container{
    display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 2px;
     justify-content: start;
-
+}
+.hidden .details-container
+{
+    display: none;
 }
 .details-image{
     width: 90vw;
