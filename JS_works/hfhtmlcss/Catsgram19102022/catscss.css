@@ -3,12 +3,13 @@
 }
 :root{
     --thumbnails-image-width: 20vw;
-    --thumbnails-image-height: 15vw;
+    --thumbnails-image-height: 25vw;
     --thumbnails-title-height: calc( var(--thumbnails-image-height) * 0.33);
 }
 body, html {
     height: 100%;
 }
+
 body{
     display: flex;
     flex-direction: column;
@@ -33,14 +34,16 @@ body{
 }
 .hidden.main-class
 {
-
+    --thumbnails-image-width: 35vw;
+    --thumbnails-image-height: 25vw;
+    --thumbnails-title-height: calc(var(--thumbnails-image-height)* 0.33);
 }
 .details-container{
    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2px;
-    justify-content: start;
+    align-items: center;
+    margin-bottom: 10vh;
+    /*justify-content: start;*/
 }
 .hidden .details-container
 {
@@ -57,16 +60,25 @@ body{
     font-family: "Bauhaus 93";
     font-style: italic;
     align-items: center;
-    background-color: red;
     position: absolute;
     left: 4px;
     bottom: 2vh;
     font-size: 2em;
 }
-.details-frame{
+.details-frame
+{
     position: relative;
 }
+.hide-button
+{
+position: absolute;
+    top: 3.5vh;
+    right: 3.5vw;
+    background-color: deeppink;
+}
+
 .thumbnails-list{
+    margin: auto;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -74,8 +86,11 @@ body{
     max-height: 25vh;
     overflow-y: auto;
     justify-content: space-around;
-    padding-left: 3px;
-    padding-right: 3px;
+    padding-left: 0;
+}
+.hidden .thumbnails-list{
+    max-height: 95vh;
+    margin-bottom: 5vw;
 }
 .thumbnails-item{
     max-width: var(--thumbnails-image-width);
@@ -104,17 +119,17 @@ text-decoration: none;
 }
 .thumbnails-item:hover{
     transform: scale(1.1);
-    /*margin-left: 2px;*/
+    margin-bottom: 2vw;
 }
 .details-image:hover{
     margin-left: 2px;
-transform: scale(1.2);
+/*transform: scale(1.2);*/
 }
 @media (min-width: 560px) {
     :root{
         --thumbnails-image-width: 12vw;
         --thumbnails-image-height: 8vw;
-        --thumbnails-title-height: calc(var(--thumbnails-image-height)*0.25);
+        --thumbnails-title-height: calc(var(--thumbnails-image-height) * 0.25);
     }
     .logo
     {
@@ -127,9 +142,16 @@ transform: scale(1.2);
         order: -1;
         justify-content: flex-start;
     }
-    .main-class{
+    .hidden .thumbnails-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    . main-class{
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 5vw;
     }
     .details-image{
         width: 45vw;
@@ -141,11 +163,24 @@ transform: scale(1.2);
     margin-bottom: 1px;
     }
 
-@media(min-width: 900px) {
+@media(min-width: 900px)
+{
        .thumbnails-list{
         padding-right: 2vw;
         margin-top: 3vh;
-        max-height: 85vh;
+        max-height: 87vh;
+           bottom: 2vh;
+}
+    .hidden .thumbnails-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .hidden.main-class{
+    --thumbnails-image-width: 18vw;
+    --thumbnails-image-height: 12vw;
+        --thumbnails-title-height: calc(var(--thumbnails-image-height) * 0.3);
     }
     .thumbnails-title
     {
@@ -162,6 +197,10 @@ transform: scale(1.2);
         background-color: deeppink;
         left: 21vw;
         bottom: 2.8vw;
+    }
+    .details-image{
+        width: 45vw;
+        height: 35vw;
     }
 }
 }
